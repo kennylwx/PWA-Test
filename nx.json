@@ -27,12 +27,18 @@
     ]
   },
   "projects": {
+    "backend": {
+      "tags": []
+    },
     "client": {
       "tags": []
     },
     "client-e2e": {
       "tags": [],
       "implicitDependencies": ["client"]
+    },
+    "types": {
+      "tags": []
     }
   }
 }
