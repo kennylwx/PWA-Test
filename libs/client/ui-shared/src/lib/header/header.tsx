@@ -6,7 +6,7 @@ export interface HeaderProps {}
 export function Header(props: HeaderProps) {
   return (
     <header className="flex">
-      <h1>Luke!</h1>
+      <h1>Luke! I am your father</h1>
     </header>
   );
 }
