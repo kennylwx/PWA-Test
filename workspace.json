@@ -153,6 +153,28 @@
         }
       }
     },
+    "client-ui-shared": {
+      "root": "libs/client/ui-shared",
+      "sourceRoot": "libs/client/ui-shared/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/client/ui-shared/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/client/ui-shared"],
+          "options": {
+            "jestConfig": "libs/client/ui-shared/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "types": {
       "root": "libs/types",
       "sourceRoot": "libs/types/src",

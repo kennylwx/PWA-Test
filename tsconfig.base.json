@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@pwa-test/client/ui-shared": ["libs/client/ui-shared/src/index.ts"],
       "@pwa-test/types": ["libs/types/src/index.ts"]
     }
   },

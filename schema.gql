@@ -1,0 +1,37 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type HairStyleType {
+  length: String!
+  texture: String!
+  color: String!
+}
+
+type UserType {
+  name: String!
+  age: Float!
+  hairstyle: HairStyleType!
+}
+
+input HairStyleInputType {
+  length: String!
+  texture: String!
+  color: String!
+}
+
+input UserInputType {
+  name: String!
+  age: Float!
+  hairstyle: HairStyleInputType!
+}
+
+type Query {
+  users: [UserType!]!
+}
+
+type Mutation {
+  createUser(input: UserInputType!): UserType!
+  updateUser(input: UserInputType!, id: String!): UserType!
+  deleteUser(id: String!): UserType!
+}

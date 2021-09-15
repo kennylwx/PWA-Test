@@ -37,6 +37,9 @@
       "tags": [],
       "implicitDependencies": ["client"]
     },
+    "client-ui-shared": {
+      "tags": []
+    },
     "types": {
       "tags": []
     }
